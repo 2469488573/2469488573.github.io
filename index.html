@@ -1,1 +1,246 @@
-马钰斌个人网站
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马钰斌 - 科研个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c7da0;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2c7da0;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #2c7da0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .education-item, .project-item, .publication-item {
+            margin-bottom: 15px;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .institution {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .description {
+            margin-top: 5px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: #e9f2f7;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .publication-list {
+            list-style-type: none;
+        }
+        
+        .publication-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .publication-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c7da0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>马钰斌</h1>
+            <div class="title">气象学博士 | 地球系统模式与边界层参数化研究</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>2469488573@qq.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>18761802285</span>
+                </div>
+                <div class="contact-item">
+                    <span>🏢</span>
+                    <span>中国科学院大气物理研究所</span>
+                </div>
+            </div>
+        </header>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <div class="education-item">
+                <div class="date">2019 - 2024</div>
+                <div class="institution">中国科学院大学 · 博士 · 气象学</div>
+                <div class="description">导师：曾庆存院士、程雪玲研究员、吴琳研究员</div>
+            </div>
+            <div class="education-item">
+                <div class="date">2015 - 2019</div>
+                <div class="institution">南京信息工程大学 · 学士</div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>研究方向</h2>
+            <p>地球系统模式、边界层理论和参数化、海气相互作用、深度学习在地球系统模式中的应用</p>
+        </section>
+
+        <section id="skills">
+            <h2>专业技能</h2>
+            <div class="skills">
+                <span class="skill">地球系统模式开发</span>
+                <span class="skill">边界层参数化</span>
+                <span class="skill">Python</span>
+                <span class="skill">深度学习</span>
+                <span class="skill">数据分析</span>
+                <span class="skill">科学计算</span>
+                <span class="skill">Fortran</span>
+                <span class="skill">科研论文写作</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>科研项目</h2>
+            <div class="project-item">
+                <div class="institution">面向海洋多尺度动力过程耦合的参数化方案研制与评估</div>
+                <div class="date">2022年国家重点研发计划 · 参与</div>
+            </div>
+            <div class="project-item">
+                <div class="institution">海洋大气边界层多尺度湍流相干结构及其通量交换的研究</div>
+                <div class="date">国家任务 · 参与</div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>学术成果</h2>
+            <ul class="publication-list">
+                <li>Water vapor flux-profile relationship in the stable boundary layer over the sea surface [J]. JGRA, 2022, 第1作者</li>
+                <li>A new Air-sea flux algorithm based on deep learning and its application in Earth System Model [J]. GMD(在投), 第1作者</li>
+                <li>The physical model of gusty coherent structure in atmospheric boundary layer [J]. JGRA, 2023, 第3作者</li>
+                <li>近海海洋边界层大气污染综合立体探测技术研究进展, 环境工程 [J]. 2024, 第18作者</li>
+                <li>The Sea Spray Generation Function for Large Droplets Based on Sea Salt Aerosol Flux Observation [J]. JGRA, 2025, 第5作者</li>
+            </ul>
+        </section>
+
+        <section id="software">
+            <h2>软件著作权</h2>
+            <ul class="publication-list">
+                <li>一种深度学习 Pytorch 到地球系统模式的接口程序 v1.0，2024, 第1作者</li>
+                <li>地球系统模式中改进的Zilitinkevich稳定边界层高度计算程序 v1.0，2025, 第1作者</li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h2>荣誉奖励</h2>
+            <div class="project-item">
+                <div class="institution">中国科学院"三好学生"称号</div>
+                <div class="date">2022-2023学年</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>最后更新: 2025年5月</p>
+        </footer>
+    </div>
+</body>
+</html>
